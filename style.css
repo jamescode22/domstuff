@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lora", serif;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: rgb(221, 229, 215);
+}
+
+main {
+  margin: 10px;
+}
+
+.headingsDiv {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.headingsDiv > h3 {
+  width: 33.33%;
+  text-align: center;
+}
+.textDiv {
+  display: flex;
+}
+
+.textDiv > p {
+  padding: 5px;
+  font-size: 1.8rem;
+}
+
+.imageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageDiv div {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageDiv > div::before {
+  content: attr(data-caption);
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 40px black;
+}
+
+header {
+  background-color: rgb(214, 64, 41);
+  border-radius: 10px;
+  color: white;
+  text-shadow: 0 0 5px white;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+header > h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.nav {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
